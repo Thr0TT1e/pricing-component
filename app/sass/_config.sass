@@ -4,11 +4,11 @@ $accent: orange // Accent Color
 $fontsize: 16px // Body Font Size
 $textcolor: #333 // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
-$roboto: Roboto, sans-serif // Roboto Font Family
+$montserrat: Montserrat, sans-serif // Montserrat Font Family
 
 // Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
 $colorGradient1: hsl(236, 72%, 79%)
-$colorGradient2: hsl(237, 63%, 64%)
+$colorGradient2: hsl(237, 63%, 64%) // основной
 
 // Very Light Grayish Blue: hsl(240, 78%, 98%)
 $colorVLBlue: hsl(240, 78%, 98%)
@@ -67,10 +67,15 @@ input, textarea
 		border-color: green
 
 body
-	font-family: $roboto
+	font-family: $montserrat
 	font-size: $fontsize
 	min-width: 320px
 	position: relative
 	line-height: 1.65
 	overflow-x: hidden
 	color: $textcolor
+
+.container
+	max-width: 1440px
+	min-width: 375px
+	margin: 0 auto

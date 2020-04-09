@@ -2,3 +2,21 @@
 
 // CUSTOM USER STYLES & IMPORTS
 
+body
+  background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg")
+  background-repeat: no-repeat
+  background-position: 100% 0, 0 100%
+  background-color: $colorVLBlue
+
+.container
+  height: 100vh
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: 100px 100px 1fr
+  justify-items: center
+  align-items: center
+  .main_container--title
+    margin-top: 6%
+
+.price
+  display:
