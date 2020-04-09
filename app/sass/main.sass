@@ -17,6 +17,30 @@ body
   align-items: center
   .main_container--title
     margin-top: 6%
+  .main_container--checkbox
+    color: $colorGBlue
 
 .price
-  display:
+  width: 200px
+  height: 450px
+  border: 1px solid $colorLightBlue
+  border-radius: 10px
+  display: inline-grid
+  justify-items: center
+  color: $colorGBlue
+  background-color: $colorVLBlue
+  div
+    display: inline-grid
+    align-content: center
+    border-top: 1px solid $colorLightBlue
+
+.money
+  font-size: 2.5rem
+
+//.price_title
+//  display: flex
+//  justify-self: center
+
+.main_container--price
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
