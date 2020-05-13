@@ -21,6 +21,8 @@ body
     margin-top: 6%
   .main_container--checkbox
     color: $colorGBlue
+    display: flex
+    align-content: center
 
 .price
   width: 350px
@@ -98,3 +100,32 @@ main
       color: $colorVLBlue
       border: 1px solid $colorVLBlue
       background: linear-gradient(to right, $colorGradient1, $colorGradient2)
+
+input[type="checkbox"]#main--checkbox
+  font-size: 30px
+  appearance: none
+  width: 3.75rem
+  height: 1.875rem
+  background: linear-gradient(to right, $colorGradient1, $colorGradient2)
+  border-radius: 3rem
+  position: relative
+  cursor: pointer
+  outline: none
+  margin:
+    left: 10px
+    right: 10px
+  &:checked
+    background: $colorGradient1
+    &::after
+      left: calc(100% - 1.875rem)
+
+input[type="checkbox"]#main--checkbox::after
+  position: absolute
+  content: ""
+  width: 1.875rem
+  height: 1.875rem
+  border-radius: 50%
+  background: $colorVLBlue
+  left: 0
+  transform: scale(.7)
+  transition: all .2s ease-in-out
