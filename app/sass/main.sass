@@ -1,6 +1,8 @@
 @import config
 
 // CUSTOM USER STYLES & IMPORTS
+*
+  box-sizing: border-box
 
 body
   background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg")
@@ -21,21 +23,29 @@ body
     color: $colorGBlue
 
 .price
-  width: 200px
+  width: 350px
   height: 450px
   border: 1px solid $colorLightBlue
-  border-radius: 10px
   display: inline-grid
   justify-items: center
   color: $colorGBlue
   background-color: $colorVLBlue
+  position: relative
+  &:first-child
+    border-radius: 10px 0 0 10px
+    right: -1px
+  &:last-child
+    border-radius: 0 10px 10px 0
+    left: -1px
   div
-    display: inline-grid
+    display: grid
+    justify-content: center
     align-content: center
     border-top: 1px solid $colorLightBlue
+    width: 80%
 
 .money
-  font-size: 2.5rem
+  font-size: 3.5rem
 
 //.price_title
 //  display: flex
@@ -44,3 +54,36 @@ body
 .main_container--price
   display: grid
   grid-template-columns: repeat(3, 1fr)
+  align-items: center
+
+main
+  margin-bottom: $gutter
+
+.price--button
+  width: 80%
+  text-transform: uppercase
+  border: 1px solid $colorVLBlue
+  border-radius: 5px
+  color: $colorVLBlue
+  background: linear-gradient(to right, $colorGradient1, $colorGradient2)
+  &:hover
+    color: $colorGradient2
+    background: $colorVLBlue
+    border: 1px solid $colorGradient2
+
+.price_active
+  color: $colorVLBlue
+  height: 500px
+  border-radius: 10px
+  background: linear-gradient(to right, $colorGradient1, $colorGradient2)
+  padding:
+    top: 25px
+    bottom: 25px
+  z-index: 1
+  .price--button
+    background: $colorVLBlue
+    color: $colorGradient2
+    &:hover
+      color: $colorVLBlue
+      border: 1px solid $colorVLBlue
+      background: linear-gradient(to right, $colorGradient1, $colorGradient2)
