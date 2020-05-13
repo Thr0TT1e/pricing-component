@@ -31,6 +31,9 @@ body
   color: $colorGBlue
   background-color: $colorVLBlue
   position: relative
+  padding:
+    top: 35px
+    bottom: 30px
   &:first-child
     border-radius: 10px 0 0 10px
     right: -1px
@@ -45,7 +48,15 @@ body
     width: 80%
 
 .money
-  font-size: 3.5rem
+  font-size: 4rem
+  position: relative
+  > span
+    height: 65px
+    font-size: 2.3rem
+    position: absolute
+    top: 20%
+    left: -15%
+
 
 //.price_title
 //  display: flex
@@ -77,8 +88,8 @@ main
   border-radius: 10px
   background: linear-gradient(to right, $colorGradient1, $colorGradient2)
   padding:
-    top: 25px
-    bottom: 25px
+    top: 60px
+    bottom: 55px
   z-index: 1
   .price--button
     background: $colorVLBlue
