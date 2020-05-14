@@ -3,10 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
 	const checkbox = document.querySelector('#main--checkbox');
 	const checkboxMonthly = document.querySelectorAll('.price_monthly');
     const checkboxYear = document.querySelectorAll('.price_year');
+    document.querySelector('#main--checkbox').onclick = showPrice;
 
     showPrice();
-
-	document.querySelector('#main--checkbox').onclick = showPrice;
 
 	function showPrice() {
         if (checkbox.checked === false) {
