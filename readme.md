@@ -7,3 +7,5 @@
 # Frontend Mentor - Pricing component with toggle
 
 ![Design preview for the Pricing component with toggle](./design/desktop-preview.jpg)
+
+<figure><embed src="https://wakatime.com/share/@Thr0TT1e/1c24b269-4493-499a-af21-e4fd68895a40.svg"></embed></figure>
